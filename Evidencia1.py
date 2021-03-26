@@ -25,3 +25,18 @@ def consulta():
         print(ventas[buscarVenta])
     else:
         print("la clave que ingreso no existe")
+
+while True:
+    print ("********MENÚ********")
+    print ("1-.Registrar una venta\n2-.Consultar una venta\n3-.Salir")
+    
+    opcionInicial = int(input("Ingrese la opción que quiera realizar: "))
+    
+    if opcionInicial == 1:
+        registroVentas()
+    
+    if opcionInicial == 2:
+        consulta()
+    
+    if opcionInicial == 3:
+        break
