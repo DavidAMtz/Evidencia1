@@ -18,3 +18,10 @@ def registroVentas():
         total = cantidadPiezasVendidas * precioDeVenta
         print (f"Su total de compra seria de: {total}")
         respuesta = int(input("¿DESEA REGISTRAR OTRA VENTA?: 1-.SI/2-.NO: "))
+
+def consulta():
+    buscarVenta =int(input("Dime la clave de compra de la venta realizada: "))
+    if buscarVenta in ventas.keys():
+        print(ventas[buscarVenta])
+    else:
+        print("la clave que ingreso no existe")
